@@ -13,9 +13,9 @@ If you would like to download the FaceForensics++, please go to this [page](http
 If you would like to access the Celeb-DF dataset, please go to this [page](https://github.com/yuezunli/celeb-deepfakeforensics/tree/master/Celeb-DF-v1) and fill out the form the author provided.
 
 ### Frame extraction
-For FF++, you can extract the frames of each videos using  `extract_frame_face_ff.py`
+For FF++, you can extract the frames of each video using  `extract_frame_face_ff.py`
 
-For Celeb-DF, you can extract the frames of each videos using  `extract_frame_face_celeb.py`
+For Celeb-DF, you can extract the frames of each video using  `extract_frame_face_celeb.py`
 
 Example: `python extract_frame_face_ff.py --datapath <xxx> -d Deepfakes -c c23`
 
@@ -42,3 +42,16 @@ Example: `python Gamma_corr.py --datapath <xxx> -d original -c raw -g 2.0`
 ### To test the model on images
 `python test_CNN.py`
 (Please set the arguments after read the code)
+
+### Models
+Models can be seen in the directort `/classification/output`.
+
+In the directory `celeb-df`, there is  - best.pkl which is the baseline model trained on the Celeb-DF standard training set.
+
+In the directory `celeb-df_plus_random`, there is  - best.pkl which is the improved model trained on the combination of Celeb-DF standard training and augmented Celeb-DF training set.
+
+In the directory `xception_XX_299`, there is - best.pkl which is the baseline model trained on corresponding FF++ standard training sets.
+
+In the directory `raw_plus_random`, there is - best.pkl which is the improved model trained on the combination of FF++ raw standard training and augmented FF++ raw training set.
+
+In the directory `nt_xception_c23_299`, there is - best.pkl, the model when considering NeuralTextures and real images.
