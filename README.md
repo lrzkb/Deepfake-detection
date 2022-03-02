@@ -17,7 +17,7 @@ For FF++, you can extract the frames of each video using  `extract_frame_face_ff
 
 For Celeb-DF, you can extract the frames of each video using  `extract_frame_face_celeb.py`
 
-Example: `python extract_frame_face_ff.py --datapath <xxx> -d Deepfakes -c c23`
+Example: `python extract_frame_face_ff.py --data_path <xxx> -d Deepfakes -c c23`
 
 ### Data set spilt 
 For FF++, you can split the dataset through `split_ff.py` .  
